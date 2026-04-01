@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MTV+</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0A111E;
+            --card-bg: #131C2D;
+            --primary-orange: #FF7A00;
+            --primary-blue: #0084FF;
+            --text-main: #ffffff;
+            --text-muted: #a0aec0;
+            --gold: #FFD700;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: Tahoma, 'Segoe UI', Arial, sans-serif; line-height: 1.8; padding: 20px; transition: all 0.3s; }
+        
+        .container { max-width: 800px; margin: 0 auto; background-color: var(--bg-color); }
+
+        /* Language Switcher */
+        .lang-switcher { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; background: var(--card-bg); padding: 10px; border-radius: 30px; border: 1px solid rgba(0, 132, 255, 0.3); }
+        .lang-btn { background: transparent; color: var(--text-muted); border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: inherit; transition: 0.3s; font-size: 14px; }
+        .lang-btn.active { background: var(--primary-blue); color: #fff; box-shadow: 0 0 15px rgba(0, 132, 255, 0.4); }
+
+        .header { text-align: center; padding: 40px 20px; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(0, 132, 255, 0.1) 100%); border-radius: 15px; border: 1px solid rgba(0, 132, 255, 0.2); margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
+        .header-icon { font-size: 60px; color: var(--primary-orange); margin-bottom: 15px; filter: drop-shadow(0 0 15px rgba(255, 122, 0, 0.4)); }
+        .header h1 { font-size: 28px; margin-bottom: 10px; color: var(--text-main); }
+        .header p { font-size: 14px; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+        .story-badge { display: inline-block; background-color: rgba(255, 122, 0, 0.1); border: 1px dashed var(--primary-orange); color: var(--primary-orange); padding: 15px; border-radius: 8px; margin-top: 20px; font-size: 14px; line-height: 1.6; }
+
+        .content-card { background-color: var(--card-bg); padding: 30px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.05); margin-bottom: 20px; transition: transform 0.3s ease; }
+        .content-card:hover { transform: translateY(-5px); border-color: rgba(0, 132, 255, 0.3); }
+        .content-card h2 { color: var(--primary-blue); font-size: 20px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; }
+        .content-card h2 i { color: var(--primary-orange); }
+
+        .content-card ul { list-style-type: none; padding: 0 15px; }
+        [dir="ltr"] .content-card ul { padding: 0 15px 0 25px; }
+        .content-card ul li { margin-bottom: 10px; position: relative; }
+        
+        [dir="rtl"] .content-card ul li::before { content: "•"; color: var(--primary-orange); position: absolute; right: -20px; font-size: 20px; line-height: 1; top: 2px; }
+        [dir="ltr"] .content-card ul li::before { content: "•"; color: var(--primary-orange); position: absolute; left: -20px; font-size: 20px; line-height: 1; top: 2px; }
+
+        .highlight { color: var(--gold); font-weight: bold; }
+
+        .footer { text-align: center; padding: 30px; margin-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-muted); font-size: 14px; }
+        .social-links { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+        .social-link { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: var(--card-bg); color: var(--text-main); text-decoration: none; font-size: 18px; border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s; }
+        .social-link:hover { background-color: var(--primary-blue); transform: scale(1.1); }
+
+        .lang-section { display: none; animation: fadeIn 0.5s; }
+        .lang-section.active { display: block; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 600px) { .header h1 { font-size: 24px; } .content-card { padding: 20px; } .content-card h2 { font-size: 18px; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="switchLang('ku', 'rtl')">کوردى</button>
+            <button class="lang-btn" onclick="switchLang('ar', 'rtl')">العربية</button>
+            <button class="lang-btn" onclick="switchLang('en', 'ltr')">English</button>
+        </div>
+
+        <div id="lang-ku" class="lang-section active">
+            <div class="header">
+                <i class="fas fa-shield-alt header-icon"></i>
+                <h1>سیاسەتی تایبەتمەندی - MTV+</h1>
+                <p>دواین نوێکردنەوە: ئەپریلی ٢٠٢٦</p>
+                <div class="story-badge">
+                    <i class="fas fa-rocket"></i> چیرۆکێک لە پشتی پڕۆژەیەکەوە: <br>
+                    ئەم ئەپڵیکەیشنە تەنها کۆمەڵێک کۆد نییە، بەڵکو بەرهەمی خولیایەک، شەونخونییەک، و سەرکێشییەکی گەورەیە بۆ هێنانەدی خەونێک و پێشکەشکردنی باشترین ئەزموونی سەیرکردنی تەلەفزیۆن. ئێمە ڕێز لە متمانەتان دەگرین و داتاکانتان وەک چاوی خۆمان دەپارێزین.
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-database"></i> چ جۆرە زانیارییەک کۆدەکەینەوە؟</h2>
+                <p>ئێمە لە MTV+ بڕوای تەواومان بە پاراستنی نهێنییەکانی بەکارهێنەر هەیە. ئێمە هیچ جۆرە زانیارییەکی هەستیار (وەک ژمارەی تەلەفۆن، وێنە، یان زانیاری بانکی) کۆناکەینەوە. ئەو زانیارییانەی وەریدەگرین بریتین لە:</p>
+                <ul style="margin-top: 15px;">
+                    <li><span class="highlight">ناوی بەکارهێنەر:</span> تەنها ئەو ناوەی کە خۆت لە کاتی چوونەژوورەوە دەینووسیت بۆ ناسینەوەت لە سیستەمەکەدا.</li>
+                    <li><span class="highlight">ناسنامەی ئامێر (Device ID):</span> بۆ ڕێگریکردن لە ساختەکاری و دڵنیابوون لەوەی کە هەژمارە پرێمیومەکان (VIP) تەنها لەسەر یەک ئامێر بەکاردەهێنرێن.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-key"></i> مۆڵەتەکان (Permissions) کە ئەپەکە داوای دەکات</h2>
+                <ul style="margin-top: 15px;">
+                    <li><span class="highlight">ئینتەرنێت (Internet):</span> بۆ وەرگرتن و لێدانی پەخشی ڕاستەوخۆی کەناڵەکان لە سێرڤەرەکانمانەوە.</li>
+                    <li><span class="highlight">شوێنگە (Location/GPS):</span> بۆ دڵنیابوون لەوەی کە بەکارهێنەر لە ناوخۆی عێراقدایە، چونکە بەشێک لە کەناڵەکان بەپێی یاسای مافی پەخش تەنها بۆ ناوخۆی عێراق تەرخانکراون. ئەم زانیارییە لە هیچ شوێنێک پاشەکەوت ناکرێت.</li>
+                    <li><span class="highlight">ئاگادارکردنەوە (Notifications):</span> بۆ ناردنی ئاگادارکردنەوەی گرنگ لەسەر کاتی یارییەکان و نوێکارییەکان.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-lock"></i> چۆن زانیارییەکانت دەپارێزین؟</h2>
+                <p>داتابەیسی ئێمە لەسەر سێرڤەرە پارێزراوەکانی گووگڵ فایەربەیس (Google Firebase) بونیادنراوە. سیستەمێکی بەهێزی دژە-هاک (Security Rules) دانراوە کە ڕێگە نادات هیچ کەسێک، بێجگە لە بەڕێوەبەری سەرەکی ئەپڵیکەیشنەکە، دەستکاری زانیارییەکان یان کۆدەکانی VIP بکات.</p>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-share-alt"></i> خزمەتگوزاری لایەنی سێیەم (Third-Party)</h2>
+                <ul style="margin-top: 15px;">
+                    <li>Firebase Authentication & Firestore (بۆ بەڕێوەبردنی هەژمارەکان)</li>
+                    <li>Google Analytics (بۆ زانینی کێشەکانی ناو ئەپەکە بە شێوەیەکی نەناسراو)</li>
+                </ul>
+                <p style="margin-top: 10px;">ئەم لایەنانە خۆیان سیاسەتی تایبەتمەندی جیاوازیان هەیە و پابەندن بە پاراستنی داتای بەکارهێنەران.</p>
+            </div>
+        </div>
+
+        <div id="lang-ar" class="lang-section">
+            <div class="header">
+                <i class="fas fa-shield-alt header-icon"></i>
+                <h1>سياسة الخصوصية - MTV+</h1>
+                <p>آخر تحديث: أبريل ٢٠٢٦</p>
+                <div class="story-badge">
+                    <i class="fas fa-rocket"></i> قصة وراء المشروع: <br>
+                    تطبيق MTV+ ليس مجرد مجموعة من الأكواد، بل هو ثمرة شغف وسهر ومغامرة كبيرة لتحقيق حلم وتقديم أفضل تجربة لمشاهدة التلفاز. نحن نحترم ثقتكم ونحمي بياناتكم كما نحمي أعيننا.
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-database"></i> ما هي المعلومات التي نجمعها؟</h2>
+                <p>في MTV+ نؤمن تماماً بحماية خصوصية المستخدم. نحن لا نجمع أي معلومات حساسة (مثل أرقام الهواتف، الصور، أو البيانات المصرفية). المعلومات التي نجمعها تقتصر على:</p>
+                <ul style="margin-top: 15px;">
+                    <li><span class="highlight">اسم المستخدم:</span> فقط الاسم الذي تدخله عند تسجيل الدخول للتعرف عليك في النظام.</li>
+                    <li><span class="highlight">معرف الجهاز (Device ID):</span> لمنع الاحتيال والتأكد من أن حسابات (VIP) تُستخدم على جهاز واحد فقط.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-key"></i> الأذونات (Permissions) المطلوبة</h2>
+                <ul style="margin-top: 15px;">
+                    <li><span class="highlight">الإنترنت (Internet):</span> لاستقبال وتشغيل البث المباشر للقنوات من سيرفراتنا.</li>
+                    <li><span class="highlight">الموقع (Location/GPS):</span> للتأكد من أن المستخدم داخل العراق، لأن بعض القنوات مخصصة للداخل العراقي فقط بموجب حقوق البث. لا يتم حفظ هذه المعلومة إطلاقاً.</li>
+                    <li><span class="highlight">الإشعارات (Notifications):</span> لإرسال تنبيهات هامة حول أوقات المباريات والتحديثات.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-lock"></i> كيف نحمي معلوماتك؟</h2>
+                <p>قواعد بياناتنا مبنية على خوادم جوجل الآمنة (Google Firebase). تم وضع نظام حماية قوي (Security Rules) يمنع أي شخص، باستثناء مدير التطبيق، من تعديل البيانات أو أكواد VIP.</p>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-share-alt"></i> خدمات الأطراف الثالثة (Third-Party)</h2>
+                <ul style="margin-top: 15px;">
+                    <li>Firebase Authentication & Firestore (لإدارة الحسابات)</li>
+                    <li>Google Analytics (لمعرفة مشاكل التطبيق بشكل مجهول)</li>
+                </ul>
+                <p style="margin-top: 10px;">هذه الجهات تمتلك سياسات خصوصية مستقلة وتلتزم بحماية بيانات المستخدمين عالمياً.</p>
+            </div>
+        </div>
+
+        <div id="lang-en" class="lang-section">
+            <div class="header">
+                <i class="fas fa-shield-alt header-icon"></i>
+                <h1>Privacy Policy - MTV+</h1>
+                <p>Last Updated: April 2026</p>
+                <div class="story-badge">
+                    <i class="fas fa-rocket"></i> A Story Behind the Project: <br>
+                    The MTV+ app is not just a bunch of code; it is the result of passion, sleepless nights, and a great adventure to realize a dream and provide the best TV viewing experience. We respect your trust and protect your data with utmost care.
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-database"></i> What information do we collect?</h2>
+                <p>At MTV+, we fully believe in protecting user privacy. We do not collect any sensitive information (such as phone numbers, photos, or banking details). The information we receive includes:</p>
+                <ul style="margin-top: 15px;">
+                    <li><span class="highlight">Username:</span> Only the name you enter during login to identify you in the system.</li>
+                    <li><span class="highlight">Device ID:</span> To prevent fraud and ensure that Premium (VIP) accounts are used on only one device.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-key"></i> Permissions requested by the app</h2>
+                <ul style="margin-top: 15px;">
+                    <li><span class="highlight">Internet:</span> To receive and play live broadcasts from our servers.</li>
+                    <li><span class="highlight">Location (GPS):</span> To ensure the user is inside Iraq, as some channels are restricted to Iraq only due to broadcasting rights. This information is never saved.</li>
+                    <li><span class="highlight">Notifications:</span> To send important alerts regarding match times, updates, and new channels.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-lock"></i> How do we protect your information?</h2>
+                <p>Our database is built on secure Google Firebase servers. A strong security system (Security Rules) is in place, preventing anyone except the main application administrator from modifying data or VIP codes.</p>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-share-alt"></i> Third-Party Services</h2>
+                <ul style="margin-top: 15px;">
+                    <li>Firebase Authentication & Firestore (for account management)</li>
+                    <li>Google Analytics (for anonymous crash reporting)</li>
+                </ul>
+                <p style="margin-top: 10px;">These parties have their own privacy policies and adhere to global user data protection standards.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3 id="footerTitle" style="color: var(--text-main); font-size: 16px; margin-bottom: 10px;">پەیوەندی کردن</h3>
+            <div class="social-links">
+                <a href="https://t.me/+9647508615141" target="_blank" class="social-link"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://wa.me/9647508615141" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="viber://chat?number=%2B9647508615141" target="_blank" class="social-link"><i class="fab fa-viber"></i></a>
+            </div>
+            <p style="margin-top: 25px; font-size: 12px; color: var(--text-muted);">© 2026 MTV+ App. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+    <script>
+        function switchLang(lang, direction) {
+            // Update HTML direction
+            document.documentElement.dir = direction;
+            document.documentElement.lang = lang;
+
+            // Hide all sections
+            document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+            // Show target section
+            document.getElementById('lang-' + lang).classList.add('active');
+
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update Footer text dynamically
+            const footerTitle = document.getElementById('footerTitle');
+            if(lang === 'ku') footerTitle.innerText = "پەیوەندی کردن";
+            else if(lang === 'ar') footerTitle.innerText = "اتصل بنا";
+            else footerTitle.innerText = "Contact Us";
+        }
+    </script>
+</body>
+</html>
